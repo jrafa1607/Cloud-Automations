@@ -11,10 +11,10 @@ These scripts run using the AWS Command Line Interface (CLI) configured with **A
 3.  **Local Repository Setup:**
     * Copy all necessary scripts from this repository to your local environment.
 4.  **Define Target Accounts:**
-    * Copy the template file named `Accounts` to your environment.
+    * Copy the template file named `contas` to your environment.
     * Populate this file with the **AWS Profile Names** (which match your SSO configuration names) that you intend to target, like so:
 
-#### File: `Accounts`
+#### File: `Contas`
 
 ```text
 <ProfileName-Num1>
@@ -25,7 +25,7 @@ These scripts run using the AWS Command Line Interface (CLI) configured with **A
 5.  **Authenticate ( Configure Credentials via SSO ):**
     * Ensure your local ~/.aws/config file contains the corresponding SSO profile configuration for each account listed in the Accounts file
   
-#### File: ~/.aws/config Structure Example
+#### File: `~/.aws/config` Structure Example
 
 ```text
 [profile <ProfileName-Num1>]
@@ -44,8 +44,6 @@ sso_role_name = <PermissionSetRoleName>
 region = <default-aws-region>
 output = json
 ```
-
-    * Before running any script, log in to your SSO session once using the profile name you intend to use ( From File `Accounts`):
 
 #### Command to Login
 
