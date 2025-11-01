@@ -1,32 +1,35 @@
-# Cloud Scripts
-> Collection of Shell Script codes for automating complex tasks spanning multiple accounts and different regions in the cloud infrastructure. Designed for efficiency and simplified management of distributed resources.
+# Cloud Scripts: Cross-Region & Multi-Account Automation 🤖
 
-## AWS
-### 🚀💻 Prerequisites
+> Collection of **Shell Script** codes for automating complex tasks spanning multiple AWS accounts and different regions. Designed for **efficiency** and **simplified management** of distributed resources across your Landing Zone.
 
-- [x] [CLI Install and Configuration](https://aws.amazon.com/pt/cli/)
-- [x] Config the files: `Config` e `Credentials` on the directory .AWS 
-- [x] Copy the scripts located in this repositoty to your environment.
-- [x] Copy to your enviroment the file: `Contas`
-- [x] Insert the ID's Number Accounts of your AWS LangindZone in the file: `Contas`, like:
+---
 
-#### File: Contas
-`<AccountName-Num1>`<br>
-`<AccountName-Num2>`
+## ✨ Key Automations
+* **Resource Cleanup:** Scripts for identifying and terminating orphaned resources (e.g., EBS volumes, old snapshots).
+* **Security Audits:** Tools to check configuration compliance across all defined accounts (e.g., S3 Public Access Block checks).
+* **Operational Sync:** Scripts for syncing configurations or data across designated regions/accounts.
 
-- [x] Configure the Config file with [AWS SSO Configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) or Using these structure:
+---
 
-#### File: Config
-`[profile <AccountName-Num1>]`<br>
-`sso_start_url = URL`<br>
-`sso_region = <region>`<br>
-`sso_account_id=<ID Number>`<br>
-`sso_role_name = <PermissionSet>`<br>
-`output = json`<br>
+## 🛠️ Prerequisites (AWS)
 
-`[profile <AccountName-Num2>]`<br>
-`sso_start_url = URL`<br>
-`sso_region = <region>`<br>
-`sso_account_id=<ID Number>`<br>
-`sso_role_name = <PermissionSet>`<br>
-`output = json`<br>
+These scripts rely on the AWS Command Line Interface (CLI) configured with **AWS SSO** credentials.
+
+### 🚀 Setup Steps
+
+1.  **Install AWS CLI:**
+    * Ensure the latest version of the [AWS CLI is installed and operational](https://aws.amazon.com/cli/).
+2.  **Configure AWS SSO:**
+    * Follow the official guide to [Configure the AWS CLI for AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
+3.  **Local Repository Setup:**
+    * Copy all necessary scripts from this repository to your local environment.
+4.  **Define Target Accounts:**
+    * Copy the template file named `Accounts` to your environment.
+    * Populate this file with the **AWS Profile Names** (which match your SSO configuration names) that you intend to target, like so:
+
+#### File: `Accounts`
+
+```text
+<ProfileName-Num1>
+<ProfileName-Num2>
+<ProfileName-Num3>
