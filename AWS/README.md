@@ -1,6 +1,6 @@
 ## 🛠️ Scripts for AWS
 
-These scripts rely on the AWS Command Line Interface (CLI) configured with **AWS SSO** credentials.
+These scripts run using the AWS Command Line Interface (CLI) configured with **AWS SSO** credentials.
 
 ### 🚀 Setup Steps
 
