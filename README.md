@@ -1,6 +1,6 @@
 # Cloud Scripts 🤖
 
-> Collection of **Shell Script** codes for automating complex tasks in multiple accounts and differents regions from public Clouds. Designed for **efficiency** and **simplified management** of distributed resources across your Landing Zone.
+> Collection of **Shell Script** codes for automating tasks in multiple accounts and differents regions from public Clouds. Designed for **efficiency** and **simplified management** of distributed resources across your Landing Zone.
 
 ---
 
