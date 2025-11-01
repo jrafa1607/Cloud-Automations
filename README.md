@@ -6,7 +6,7 @@
 
 ## ✨ Key Automations
 * **Resource Cleanup:** Scripts for identifying and terminating orphaned resources (e.g., EBS volumes, old snapshots).
-* **Security Audits:** Tools to check configuration compliance across all defined accounts (e.g., S3 Public Access Block checks).
+* **Security Audits:** Scripts to Check configuration compliance (e.g., S3 Public Access Block checks).
 * **Operational Sync:** Scripts for syncing configurations or data across designated regions/accounts.
 
 ---
