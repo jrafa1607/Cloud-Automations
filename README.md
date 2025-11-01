@@ -1,5 +1,5 @@
 # Cloud Scripts
-> This repository stores the automations developed to perform Cross-Region and Multi-Account tasks. All automations were developed in Python or ShellScript.
+> Collection of Shell Script codes for automating complex tasks spanning multiple accounts and different regions in the cloud infrastructure. Designed for efficiency and simplified management of distributed resources.
 
 ## AWS
 ### 🚀💻 Prerequisites
