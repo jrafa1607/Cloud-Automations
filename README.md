@@ -1,4 +1,4 @@
-# Cloud Scripts: Cross-Region & Multi-Account Automation 🤖
+# Cloud Scripts 🤖
 
 > Collection of **Shell Script** codes for automating complex tasks spanning multiple AWS accounts and different regions. Designed for **efficiency** and **simplified management** of distributed resources across your Landing Zone.
 
