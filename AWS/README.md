@@ -10,8 +10,8 @@
 3.  **Configure um Repositório Local:**
     * Será necessário copiar todas as automações desejadas deste repositório para um diretório local em seu ambiente.
 4.  **Definição das Contas:**
-    * Faça uma cópia do Arquivo chamado `contas` para o diretório local de seu ambiente.
-    * Atualize este Arquivo com o **Nome das Contas** que você pretende executar as automações. Este nome deverá ser configurado posteriormente no Arquivo Credentials do AWS CLI.
+    * Copie o Arquivo chamado `contas` para o diretório local de seu ambiente.
+    * Atualize este Arquivo com o **Nome das Contas** que você pretende executar as automações.
     * Exemplo de Preenchimento do Arquivo Contas:
 
 #### Arquivo: `Contas`
@@ -24,10 +24,12 @@
 <ProfileName-Num5>
 ```
 
-5.  **Authenticate ( Configure Credentials via SSO ):**
-    * Ensure your local ~/.aws/config file contains the corresponding SSO profile configuration for each account listed in the Accounts file
+5.  **Autenticação ( Configuração do Credentials do SSO ):**
+    * Seu Ambiente de Instalação do CLI deve conter o diretório: ~/.aws/config
+    * Edite o Arquivo `Config` informando no Campo Profile o **Nome das Contas** utilizado no Arquivo **Contas**.
+    * Exemplo de Preenchimento do Arquivo Config:
   
-#### File: `~/.aws/config` Structure Example
+#### Arquivo: `~/.aws/config`
 
 ```text
 [profile <ProfileName-Num1>]
@@ -47,10 +49,12 @@ region = <default-aws-region>
 output = json
 ```
 
-#### Command to Login
+#### Comando para Executar Login
+
+> Após concluir a configuração dos Arquivos: **Contas e Config**, você deve validar o Setup executando um Login na AWS via CLI.
+> Para isso Basta executar o comando: aws sso login`. Este comando abrirá seu navegador para Autenticação e armazenará em Cache uma Credencial Temporária.
+> Esta Credencial será utilizada para executar as automações.
 
 ```base
 aws sso login --profile <ProfileName-Num1>
 ```
-
-* This command opens your browser for authentication and caches the necessary credentials for subsequent script runs.
