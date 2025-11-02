@@ -1,19 +1,19 @@
 # Cloud Automations 🤖
 
-> Coleção de Automações **(Shell Script, Python, AWS CLI, dentre outras Linguagens e Tecnologias)** desenvolvidos para **Automatizar Tarefas** em Múltiplas Contas e Regiões ( MultiAccount / MultiRegion ) de provedores de Nuvem pública (AWS, Azure, GCP, etc.).
-> As automações foram projetadas para oferecer **eficiência**, **segurança** e **gestão simplificada** de recursos distribuídos em uma Landing Zone.
+> A collection of Automations **(Shell Script, Python, AWS CLI, and other Languages and Technologies)** developed to **Automate Tasks** across Multiple Accounts and Regions of public Cloud Providers (AWS, Azure, GCP, etc.).
+> The automations were designed to offer **Efficiency**, **Security**, and **Simplified Management** of resources distributed in a Landing Zone.
 
 ---
 
-### ✨ Por Que Automatizar Tarefas de Cloud?
+### ✨ Why Automate Cloud Tasks?
 
-| Benefício | Descrição |
+| Benefits | Description |
 | :--- | :--- |
-| **Orimização** | Remover e Tratar recursos ociosos, obsoletos e órfãos para gerar Redução de Custos. |
-| **Segurança** | Garantir que Recursos e Configurações estejam sempre em **Compliance**. |
-| **Escalabilidade** | Aplicar ações complexas de forma ágil e padronizada em **Múltiplas Contas e Regiões**. |
-| **Padronização** | Automatizar Tarefas remove a Variabilidade e o Risco associado às Práticas Manuais. |
+| **Optimization** | Remove and Handle idle, obsolete, and orphaned resources to generate Cost Reduction. |
+| **Security** | Ensure that Resources and Configurations are always in **Compliance**. |
+| **Scalability** | Apply complex actions quickly and consistently across **Multiple Accounts and Regions**. |
+| **Standardization** | Automating Tasks removes the Variability and Risk associated with Manual Practices. |
 <br>
 
-> ⚠️ **Importante:** Sempre Revise as Automações antes de executá-las. É importante entender completamente quais ações serão implementadas.
-> Por isso, sempre que possível faça testes em ambientes não-produtivos primeiro, para posteriormente, executar em ambientes produtivos.
+> ⚠️ **Important:** Always Review the Automations before executing them. It is important to fully understand which actions will be implemented.
+> Therefore, whenever possible, test them first in non-production environments before executing them in production environments.
