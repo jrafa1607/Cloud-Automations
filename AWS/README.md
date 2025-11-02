@@ -12,7 +12,6 @@
 4.  **Definição das Contas:**
     * Faça uma cópia do Arquivo chamado `contas` para o diretório local de seu ambiente.
     * Atualize este Arquivo com o **Nome das Contas** que você pretende executar as automações. Este nome deverá ser configurado posteriormente no Arquivo Credentials do AWS CLI.
-  
     * Exemplo de Preenchimento do Arquivo Contas:
 
 #### Arquivo: `Contas`
