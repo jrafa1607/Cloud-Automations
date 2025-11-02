@@ -5,7 +5,7 @@ contas=`cat contas`
 for conta in $contas;
 do
         echo "========================================================"
-        echo "Verificando Buckets da conta: $conta"
+        echo "Check the s3 Buckets in the Account: $conta"
 
         list=$(aws s3api list-buckets --query "Buckets[].Name" --output text --profile $conta > buckets)
         buckets=`cat buckets`
