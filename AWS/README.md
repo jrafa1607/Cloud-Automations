@@ -10,7 +10,7 @@
 3.  **Configure um Repositório Local:**
     * Será necessário copiar todas as automações desejadas deste repositório para um diretório local em seu ambiente.
 4.  **Definição das Contas:**
-    * Copie o Arquivo chamado `contas` para o diretório local de seu ambiente.
+    * Crie um Arquivo chamado `contas` no diretório local de seu ambiente.
     * Atualize este Arquivo com o **Nome das Contas** que você pretende executar as automações.
     * Exemplo de Preenchimento do Arquivo Contas:
 
