@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 contas=`cat contas`
 
-echo "Informe o nome do Cofre: "
+echo "Vault Name: "
 read vault
 
-echo "Informe a Região: "
+echo Region: "
 read region
 
 for conta in $contas;
