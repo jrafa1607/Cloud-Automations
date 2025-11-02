@@ -10,8 +10,8 @@
 | Benefício | Descrição |
 | :--- | :--- |
 | **Economia de Custos** | Eliminar recursos ociosos, obsoletos e órfãos para reduzir Custos. |
-| **Segurança e Conformidade** | Garantir que as configurações de segurança estejam sempre em **Compliance**. |
-| **Escalabilidade e Agilidade** | Permite aplicar ações complexas de forma rápida e uniforme em **Múltiplas Contas e Regiões**. |
+| **Segurança** | Garantir que Recursos e Configurações estejam sempre em **Compliance**. |
+| **Escalabilidade** | Aplicar ações complexas de forma ágil e padronizada em **Múltiplas Contas e Regiões**. |
 | **Padronização** | Tarefas executadas por Scripts eliminam a Variabilidade e o Risco associado ao Tarefas Manuais. |
 
 > ⚠️ **Importante:** Sempre Revise as Automações antes de executá-las. É importante entender completamente quais ações serão implementadas.
