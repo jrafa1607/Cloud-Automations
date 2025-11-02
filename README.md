@@ -1,10 +1,18 @@
-# Cloud Scripts 🤖
+# Cloud Automations 🤖
 
-> Collection of **Shell Script** codes for automating tasks in multiple accounts and differents regions from public Clouds. Designed for **efficiency** and **simplified management** of distributed resources across your Landing Zone.
+> Coleção de Automações **(Shell Script, Python, AWS CLI, dentre outras Linguagens e Tecnologias)** desenvolvidos para **Automatizar Tarefas** em Múltiplas Contas e Regiões ( MultiAccount / MultiRegion ) de provedores de Nuvem pública (AWS, Azure, GCP, etc.).
+> As automações foram projetadas para oferecer **eficiência**, **segurança** e **gestão simplificada** de recursos distribuídos em uma Landing Zone.
 
 ---
 
-## ✨ Key Automations
-* **Resource Cleanup:** Scripts for identifying and terminating orphaned resources (e.g., volumes, old snapshots).
-* **Security Audits:** Scripts to Check configuration compliance (e.g., S3 Public Access Block checks).
-* **Operational Sync:** Scripts for syncing configurations or data across designated regions/accounts.
+### ✨ Por Que Automatizar Tarefas de Cloud?
+
+| Benefício | Descrição |
+| :--- | :--- |
+| **Economia de Custos** | Eliminar recursos não utilizados, obsoletos e/ou órfãos para reduzir cobranças desnecessárias. |
+| **Segurança e Conformidade** | Garantir que as configurações de segurança estejam sempre em **Compliance**. |
+| **Escalabilidade e Agilidade** | Permite aplicar ações complexas de forma rápida e uniforme em **Múltiplas Contas e Regiões**. |
+| **Padronização** | Tarefas executadas por Scripts eliminam a Variabilidade e o Risco associado ao Tarefas Manuais. |
+
+> ⚠️ **Importante:** Sempre Revise as Automações antes de executá-las. É importante entender completamente quais ações serão implementadas.
+> Por isso, sempre que possível faça testes em ambientes não-produtivos primeiro, para posteriormente, executar em ambientes produtivos.
