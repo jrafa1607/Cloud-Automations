@@ -9,7 +9,7 @@
 
 | Benefício | Descrição |
 | :--- | :--- |
-| **Reduzir Custos** | Tratar recursos ociosos, obsoletos e órfãos para Gerar Economia de Custos. |
+| **Orimização** | Remover e Tratar recursos ociosos, obsoletos e órfãos para gerar Redução de Custos. |
 | **Segurança** | Garantir que Recursos e Configurações estejam sempre em **Compliance**. |
 | **Escalabilidade** | Aplicar ações complexas de forma ágil e padronizada em **Múltiplas Contas e Regiões**. |
 | **Padronização** | Tarefas executadas por Scripts eliminam a Variabilidade e o Risco associado ao Tarefas Manuais. |
