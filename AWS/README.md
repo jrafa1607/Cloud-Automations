@@ -1,7 +1,7 @@
 ### 🛠️🚀 Automações para AWS
 
 > As automações disponíveis nesse Repositório utilizam o AWS CLI **(AWS Command Line Interface)** configurado juntamente com Credenciais do **AWS SSO (AWS Identity Center)**.
-> Etapas de Configuração (Setup):
+> Etapas de Configuração:
 
 1.  **Instalação do AWS CLI:**
     * Garanta que a Última versão disponível do AWS CLI esteja Instalada e Funcionando em seu Ambiente: [AWS CLI](https://aws.amazon.com/cli/).
