@@ -48,7 +48,7 @@ output = json
 #### Command to Login
 
 ```base
-aws sso login --profile <profile-name-dev>
+aws sso login --profile <ProfileName-Num1>
 ```
 
 * This command opens your browser for authentication and caches the necessary credentials for subsequent script runs.
