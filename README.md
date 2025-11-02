@@ -13,6 +13,6 @@
 | **Segurança** | Garantir que Recursos e Configurações estejam sempre em **Compliance**. |
 | **Escalabilidade** | Aplicar ações complexas de forma ágil e padronizada em **Múltiplas Contas e Regiões**. |
 | **Padronização** | Automatizar Tarefas remove a Variabilidade e o Risco associado às Práticas Manuais. |
-
+<br>
 > ⚠️ **Importante:** Sempre Revise as Automações antes de executá-las. É importante entender completamente quais ações serão implementadas.
 > Por isso, sempre que possível faça testes em ambientes não-produtivos primeiro, para posteriormente, executar em ambientes produtivos.
