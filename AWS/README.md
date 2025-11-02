@@ -1,35 +1,29 @@
-### 🛠️🚀 Automações para AWS
+### 🛠️🚀 Automations for AWS
 
-> As automações disponíveis nesse Repositório utilizam o AWS CLI **(AWS Command Line Interface)** configurado juntamente com Credenciais do **AWS SSO (AWS Identity Center)**.
-> Etapas de Configuração:
+> The automations available in this Repository use the **AWS Command Line Interface (CLI)** configured with **AWS Identity Center (SSO)** credentials.
+> Configuration Steps:
 
-1.  **Instalação do AWS CLI:**
-    * Garanta que a Última versão disponível do AWS CLI esteja Instalada e Funcionando em seu Ambiente: [AWS CLI](https://aws.amazon.com/cli/).
-2.  **Configure o AWS SSO:**
-    * Para configurar uma Credencial Válida do SSO, utilize o Guia Oficial da AWS: [Configure the AWS CLI for AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
-3.  **Configure um Repositório Local:**
-    * Será necessário copiar todas as automações desejadas deste repositório para um diretório local em seu ambiente.
-4.  **Definição das Contas:**
-    * Crie um Arquivo chamado `contas` no diretório local de seu ambiente.
-    * Atualize este Arquivo com o **Nome das Contas** que você pretende executar as automações.
-    * Exemplo de Preenchimento do Arquivo Contas:
+1. **AWS CLI Installation:** Ensure that the latest available version of the AWS CLI is Installed and Operational in your environment: [AWS CLI](https://aws.amazon.com/cli/).
+2. **Configure AWS SSO:** To set up a Valid SSO Credential, use the Official AWS Guide: [Configure the AWS CLI for AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
+3. **Local Repository Setup:** You will need to copy the desired automations from this repository into a local directory in your environment.
+4. **Account Definition:** Create a File named `accounts` in your local environment's directory.
+5. **Update the File:** Update this File with the **Account Names** where you intend to run the automations. Example of the `accounts` File:
 
-#### Arquivo: `Contas`
+#### File: `accounts`
 
 ```text
 <ProfileName-Num1>
 <ProfileName-Num2>
 <ProfileName-Num3>
 <ProfileName-Num4>
-<ProfileName-Num5>
 ```
 
-5.  **Autenticação ( Configuração do Credentials do SSO ):**
-    * Seu Ambiente de Instalação do CLI deve conter o diretório: ~/.aws/config
-    * Edite o Arquivo `Config` informando no Campo Profile o **Nome das Contas** utilizado no Arquivo **Contas**.
-    * Exemplo de Preenchimento do Arquivo Config:
+5. **Authentication (SSO Credentials Configuration):**
+    * Your CLI Installation Environment must contain the directory: `~/.aws/config`
+    * Edit the Config File, with the **Account Name** used in the **accounts** file into the Profile Field.
+    * Example of the Config File:
   
-#### Arquivo: `~/.aws/config`
+#### File: `~/.aws/config`
 
 ```text
 [profile <ProfileName-Num1>]
@@ -47,13 +41,29 @@ sso_account_id = <ID Number>
 sso_role_name = <PermissionSetRoleName>
 region = <default-aws-region>
 output = json
+
+[profile <ProfileName-Num3>]
+sso_start_url = <Your-SSO-Portal-URL>
+sso_region = <Your-SSO-Region>
+sso_account_id = <ID Number>
+sso_role_name = <PermissionSetRoleName>
+region = <default-aws-region>
+output = json
+
+[profile <ProfileName-Num4>]
+sso_start_url = <Your-SSO-Portal-URL>
+sso_region = <Your-SSO-Region>
+sso_account_id = <ID Number>
+sso_role_name = <PermissionSetRoleName>
+region = <default-aws-region>
+output = json
 ```
 
-#### Comando para Executar Login
+#### Command to Execute Login
 
-> Após concluir a configuração dos Arquivos: **Contas e Config**, você deve validar o Setup executando um Login na AWS via CLI.
-> Para isso Basta executar o comando: aws sso login`. Este comando abrirá seu navegador para Autenticação e armazenará em Cache uma Credencial Temporária.
-> Esta Credencial será utilizada para executar as automações.
+> After concluding the configuration of the **accounts** and **config** files, you must validate the setup by performing an AWS Login via CLI.
+> To do this, simply run the command: `aws sso login`. This command will open your browser for Authentication and store a Temporary Credential in Cache.
+> This Credential will be used to execute the automations.
 
 ```base
 aws sso login --profile <ProfileName-Num1>
