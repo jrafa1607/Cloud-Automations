@@ -9,7 +9,7 @@
 
 | Benefício | Descrição |
 | :--- | :--- |
-| **Economia de Custos** | Eliminar recursos não utilizados, obsoletos e/ou órfãos para reduzir cobranças desnecessárias. |
+| **Economia de Custos** | Eliminar recursos ociosos, obsoletos e órfãos para reduzir Custos. |
 | **Segurança e Conformidade** | Garantir que as configurações de segurança estejam sempre em **Compliance**. |
 | **Escalabilidade e Agilidade** | Permite aplicar ações complexas de forma rápida e uniforme em **Múltiplas Contas e Regiões**. |
 | **Padronização** | Tarefas executadas por Scripts eliminam a Variabilidade e o Risco associado ao Tarefas Manuais. |
