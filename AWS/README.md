@@ -1,25 +1,28 @@
-## 🛠️ Scripts for AWS
+### 🛠️🚀 Automações para AWS
 
-These scripts run using the AWS Command Line Interface (CLI) configured with **AWS SSO** credentials.
+> As automações disponíveis nesse Repositório utilizam o AWS CLI **(AWS Command Line Interface)** configurado juntamente com Credenciais do **AWS SSO (AWS Identity Center)**.
+> Etapas de Configuração (Setup):
 
-### 🚀 Setup Steps
+1.  **Instalação do AWS CLI:**
+    * Garanta que a Última versão disponível do AWS CLI esteja Instalada e Funcionando em seu Ambiente: [AWS CLI](https://aws.amazon.com/cli/).
+2.  **Configure o AWS SSO:**
+    * Para configurar uma Credencial Válida do SSO, utilize o Guia Oficial da AWS: [Configure the AWS CLI for AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
+3.  **Configure um Repositório Local:**
+    * Será necessário copiar todas as automações desejadas deste repositório para um diretório local em seu ambiente.
+4.  **Definição das Contas:**
+    * Faça uma cópia do Arquivo chamado `contas` para o diretório local de seu ambiente.
+    * Atualize este Arquivo com o **Nome das Contas** que você pretende executar as automações. Este nome deverá ser configurado posteriormente no Arquivo Credentials do AWS CLI.
+  
+    * Exemplo de Preenchimento do Arquivo Contas:
 
-1.  **Install AWS CLI:**
-    * Ensure the latest version of the [AWS CLI is installed and operational](https://aws.amazon.com/cli/).
-2.  **Configure AWS SSO:**
-    * Follow the official guide to [Configure the AWS CLI for AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
-3.  **Local Repository Setup:**
-    * Copy all necessary scripts from this repository to your local environment.
-4.  **Define Target Accounts:**
-    * Copy the template file named `contas` to your environment.
-    * Populate this file with the **AWS Profile Names** (which match your SSO configuration names) that you intend to target, like so:
-
-#### File: `Contas`
+#### Arquivo: `Contas`
 
 ```text
 <ProfileName-Num1>
 <ProfileName-Num2>
 <ProfileName-Num3>
+<ProfileName-Num4>
+<ProfileName-Num5>
 ```
 
 5.  **Authenticate ( Configure Credentials via SSO ):**
