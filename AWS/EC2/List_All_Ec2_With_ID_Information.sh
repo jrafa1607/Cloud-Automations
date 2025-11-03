@@ -1,14 +1,17 @@
 #!/usr/bin/bash
-contas=`cat contas`
+accounts=`cat accounts`
+
 # Declare an array of string with type
 declare -a StringArrayRegions=("us-east-1" "sa-east-1" )
-for conta in $contas;
+
+for account in $accounts;
 do
-        for regiao in ${StringArrayRegions[@]}; # Iterate the string array using for loop
+        for region in ${StringArrayRegions[@]}; # Iterate the string array using for loop
         do
-                echo "==== Check All Ec2 from Account: $conta"
-                cmd=$(aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,Name,State.Name]' --output text --region $regiao --profile $conta)
-                echo "$conta - $regiao - $cmd" | tee -a ec2List.txt
+                echo "==== Check All Ec2 from Account: $account"
+                cmd=$(aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,Name,State.Name]' --output text --region $region --profile $account)
+                
+                echo "$account - $region - $cmd" | tee -a ec2List.txt
                 echo "================================="
         done
 done
