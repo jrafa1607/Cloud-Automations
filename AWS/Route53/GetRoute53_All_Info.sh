@@ -1,26 +1,26 @@
 #!/usr/bin/bash
-contas=`cat contas`
+accounts=`cat accounts`
 
-for conta in $contas;
+for account in $accounts;
 do
         echo "========================================================"
-        echo "Check all The Hosted Zones from the AWS Account: $conta"
+        echo "Check all The Hosted Zones from the AWS Account: $account"
 
-        list=$(aws route53 list-hosted-zones --query 'HostedZones[].[Id,Name,ResourceRecordSetCount]' --region us-east-1 --profile $conta)
+        list=$(aws route53 list-hosted-zones --query 'HostedZones[].[Id,Name,ResourceRecordSetCount]' --region us-east-1 --profile $account)
 
         #List with All IDs from Hosted Zones in each AWS Account!
-        listzones=$(aws route53 list-hosted-zones --query 'HostedZones[].[Id]' --output text --region us-east-1 --profile $conta > zones)
+        listzones=$(aws route53 list-hosted-zones --query 'HostedZones[].[Id]' --output text --region us-east-1 --profile $account > zones)
 
         zones=`cat zones`
         if [ -z $zones ]; then
-                echo "The Account $conta doesn't have any Hosted Zone!"
+                echo "The Account $account doesn't have any Hosted Zone!"
         else
 
                 for zone in $zones;
                 do
                         echo "Check all The Records from the Hoste Zone: $zone"
                         echo " "
-                        getstatus=$(aws route53 list-resource-record-sets --hosted-zone-id $zone --output text --region us-east-1 --profile $conta)
+                        getstatus=$(aws route53 list-resource-record-sets --hosted-zone-id $zone --output text --region us-east-1 --profile $account)
 
                         echo $getstatus
 
