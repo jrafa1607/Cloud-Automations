@@ -1,14 +1,16 @@
 #!/usr/bin/bash
-contas=`cat contas`
+accounts=`cat accounts`
+
 # Declare an array of string with type
 declare -a StringArrayRegions=("us-east-1" "sa-east-1" )
-for conta in $contas;
+
+for account in $accounts;
 do
-        for regiao in ${StringArrayRegions[@]}; # Iterate the string array using for loop
+        for region in ${StringArrayRegions[@]}; # Iterate the string array using for loop
         do
-                echo "==== List All Lambda Functions from Account: $conta"
-                cmd=$(aws lambda list-functions --query 'Functions[].[FunctionName,FunctionArn]' --output json --region $regiao --profile $conta)
-                echo "$conta - $regiao" 
+                echo "==== List All Lambda Functions from Account: $account"
+                cmd=$(aws lambda list-functions --query 'Functions[].[FunctionName,FunctionArn]' --output json --region $region --profile $account)
+                echo "$account - $region" 
 		echo "$cmd"
 		echo "================================================================================="
         done
