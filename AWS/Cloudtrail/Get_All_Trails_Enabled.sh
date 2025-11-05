@@ -2,7 +2,7 @@
 accounts=`cat accounts`
 
 # Declare an array of string with type
-declare -a StringArrayRegions=("us-east-1" "sa-east-1" )
+declare -a StringArrayRegions=("us-east-1" "sa-east-1")
 
 for account in $accounts;
 do
