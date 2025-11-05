@@ -15,15 +15,13 @@ do
         if [ -z $zones ]; then
                 echo "The Account $account doesn't have any Hosted Zone!"
         else
-
                 for zone in $zones;
                 do
                         echo "Check all The Records from the Hoste Zone: $zone"
                         echo " "
+                        
                         getstatus=$(aws route53 list-resource-record-sets --hosted-zone-id $zone --output text --region us-east-1 --profile $account)
-
                         echo $getstatus
-
                 done
         fi
 done
