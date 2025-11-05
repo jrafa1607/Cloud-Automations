@@ -4,7 +4,7 @@ accounts=`cat accounts`
 echo "Vault Name: "
 read vault
 
-echo Region: "
+echo "Region: "
 read region
 
 for account in $accounts;
