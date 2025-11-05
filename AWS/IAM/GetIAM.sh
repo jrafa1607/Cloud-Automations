@@ -28,6 +28,7 @@ do
                 do
                         listkey=$(aws iam get-access-key-last-used --access-key-id $key --profile $account --output json)
                         echo "Information About the Last Access of the Key: $key"
+                        
                         echo "$listkey"
                         echo "==========*==========="
 
