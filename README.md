@@ -1,7 +1,7 @@
 # Cloud Automations 🤖
 
 > A collection of Automations **(Shell Script, Python, AWS CLI, and other Languages and Technologies)** developed to **Automate Tasks** across Multiple Accounts and Regions of public Cloud Providers (AWS, Azure, GCP, etc.).
-> The automations were designed to offer **Efficiency**, **Security**, and **Simplified Management** of resources distributed in a Landing Zone.
+> The automations were designed to offer **Efficiency**, **Security**, and **Simplified Management** of cloud resources distributed in a Landing Zone.
 
 ---
 
